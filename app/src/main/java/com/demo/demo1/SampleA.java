@@ -22,7 +22,7 @@ public class SampleA extends AppCompatActivity {
         findViewById(R.id.btnClickPIP).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SampleA.this, PIP.class));
+                startActivity(new Intent(SampleA.this, VideoChatViewActivity.class));
             }
         });
     }

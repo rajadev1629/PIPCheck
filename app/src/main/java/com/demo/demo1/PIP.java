@@ -19,7 +19,6 @@ public class PIP extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_pip);
-        linearLayout = findViewById(R.id.main);
         initPictureInPictureParams();
         findViewById(R.id.btnClick).setOnClickListener(new View.OnClickListener() {
             @Override
