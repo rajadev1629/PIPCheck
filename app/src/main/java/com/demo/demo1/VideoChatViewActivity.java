@@ -314,6 +314,12 @@ public class VideoChatViewActivity extends Activity {
         RtcEngine.destroy();
     }
 
+   /* @Override
+    protected void onUserLeaveHint() {
+        super.onUserLeaveHint();
+        startPictureInPictureFeature();
+    }*/
+
     private void leaveChannel() {
         if (mRtcEngine != null)
             mRtcEngine.leaveChannel();

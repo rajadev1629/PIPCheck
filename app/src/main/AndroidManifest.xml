@@ -15,30 +15,29 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".SampleA"
-            android:label="@string/app_name">
+
+        <activity android:name=".SampleB" />
+        <activity android:name=".SampleC" />
+        <activity android:name=".SampleA">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SampleB" />
-        <activity android:name=".SampleC" />
-        <activity
-            android:name=".VideoChatViewActivity"
+        <activity android:name=".VideoChatViewActivity"
+            android:autoRemoveFromRecents="true"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-            android:supportsPictureInPicture="true"
-            android:launchMode="singleTask"
-            android:taskAffinity=".PIP"
             android:excludeFromRecents="true"
-            android:resizeableActivity="true"
+            android:launchMode="singleTask"
             android:noHistory="true"
-            android:autoRemoveFromRecents="true"/>
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+            android:taskAffinity=".PIP"/>
     </application>
 
 </manifest>
